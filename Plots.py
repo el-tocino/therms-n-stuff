@@ -29,6 +29,7 @@ conn.close
 
 plt.xlabel('Time')
 plt.ylabel('Temperature')
+plt.legend()
 plt.savefig('foo.png')
 #plt.savefig('foo.png', bbox_inches='tight')
 
