@@ -14,7 +14,7 @@ sensors = cur.fetchall()
 for names in sensors:
     sensor = str(names[1])
     sensorname = str(names[0])
-    sql = "SELECT time , temperature from temperatures where sensor=%s order by time desc limit 10"
+    sql = "SELECT time , temperature from temperatures where sensor=%s order by time desc limit 40"
     cur.execute(sql, sensor)
     data = cur.fetchall()
     for linez in data:
@@ -31,5 +31,3 @@ plt.xlabel('Time')
 plt.ylabel('Temperature')
 plt.legend()
 plt.savefig('foo.png')
-#plt.savefig('foo.png', bbox_inches='tight')
-
