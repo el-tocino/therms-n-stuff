@@ -35,4 +35,3 @@ plt.xlabel('Time')
 plt.ylabel('Temperature')
 plt.legend()
 plt.savefig('foo.png')
-
