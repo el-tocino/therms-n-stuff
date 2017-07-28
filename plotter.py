@@ -42,3 +42,4 @@ plt.xlabel(x_label)
 plt.ylabel('Temperature')
 plt.legend()
 plt.savefig(pngfile)
+print 'Saved output to %s' % pngfile
